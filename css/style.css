@@ -14,14 +14,16 @@ Color palette
 body {
     margin: 0;
     font-size: 1rem;
+    /* font-family: "Source Sans 3", sans-serif; */
 }
 
 header {
-
+    position: fixed;
 }
 
 .container {
     width: 375px;
+    height: 545px;
     max-width: 1200px;
     margin: 0 auto;
 }
