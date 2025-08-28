@@ -4,36 +4,115 @@ Color palette
 #FFFFFF - White 
 #C6C6C6 - Light Gray
 #EDEDED - Lighter Gray / fill color between sections
-
-
-
-
 */
-
+/* general / utility */
 
 body {
     margin: 0;
+    padding: 0;
     font-size: 1rem;
-    /* font-family: "Source Sans 3", sans-serif; */
+    font-family: "Source Sans 3", sans-serif;
 }
 
-header {
-    position: fixed;
+.mb-0 {
+    margin-bottom: 0;
 }
+
+/* layout/Containers */
 
 .container {
     width: 375px;
-    height: 545px;
-    max-width: 1200px;
     margin: 0 auto;
+    background-color: #C6C6C6;
+    border-bottom: 2px solid #C6C6C6;
 }
+
+.header {
+    background-color: #FFFFFF;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .avatar {
+    padding-right: 10px;
+}
+
+
+/* typography */
+
+h2 {
+    margin: 0 0 0 10px;
+    font-size: .8125rem;
+}
+
+.post-text {
+    margin-left: 15px;
+}
+
+p {
+    margin: 0;
+    font-size: .8125rem;
+    padding-bottom: 5px;
+}
+
+.bold {
+    font-weight: bold;
+    display: inline;
+}
+
+.user-info p {
+    margin: 0 0 0 10px;
+    font-size: .75rem;
+}
+
+/* reusable components */
 
 .logo {
     width: 127px;
-    height: 33.02px;
 }
 
 .avatar {
     width: 34px;
     height: 34px;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 22.3px;
+    height: 22.13px;
+    margin-right: 5px;
+}
+
+/* post section */
+
+
+.post {
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.post-icons {
+    align-items: center;
+    margin: 8px 0;
+    padding-left: 14.5px;
+    cursor: pointer;
+}
+
+/* misc */
+#header {
+    background-color: #FFFFFF;
 }
